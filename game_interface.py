@@ -15,14 +15,16 @@ class GameInterface:
         self.height_frame = 750
         self.helper = Helper()
 
+   
+
+    def destroy(self, window_place):
+        window_place.destroy()
+
     '''
     @:param
     The function will take as parameters the list, with its index, which contains the dictionary
     Because we have 5 keys, then it will contain the question label and the 4 checkboxes for the label
     '''
-
-    def destroy(self, window_place):
-        window_place.destroy()
 
     def check_game(self, dictionary_list):
         global message_game
